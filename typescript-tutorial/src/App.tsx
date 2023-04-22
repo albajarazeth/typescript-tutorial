@@ -1,56 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import InputField from './components/InputField';
 
-let name: string;
-let age: number;
-let isStudent: boolean;
-let hobbies: string[];
-let role: [number, string];
 
-interface Person{
-  name: string;
-  age?: number;
-}
 
-interface Position extends Person{
-  profession: string;
-}
+const App: React.FC = () => {
 
-let personOne: Person = {
-  name: "Liam",
-};
+  const [todo, setTodo] = useState<string>("");
+  console.log(todo);
 
-let lotsOfPeople: Person[];
-
-//let printOtherName: Function;
-let printOtherName: (name: string) => never;
-
-function printName(name: string){
-  console.log(name);
-}
-
-type X = {
- a: string,
- b: number
-} 
-
-type Y = X & {
-  c: string,
-  d: number
-};
-
-/*
-let y: Y = {
-  c: "William",
-  d: 45
-}
-*/
-
-function App() {
   return (
     <div className="App">
-      <h1>main</h1>
-      <button onClick={()=>printName("Marie")}>CLICK ME</button>
+      <span className='heading'>Taskify</span>
+      <InputField todo={todo} setTodo={setTodo}/>
     </div>
   );
 }
