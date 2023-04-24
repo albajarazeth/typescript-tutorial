@@ -27,7 +27,7 @@ const App: React.FC = () => {
   //allows user to type and save a note
   return (
     <div className="App">
-      <span className='heading'>Taskify</span>
+      <span className='heading'>Tasks</span>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>
       <TodoList todos={todos} setTodos={setTodos}/>
     </div>

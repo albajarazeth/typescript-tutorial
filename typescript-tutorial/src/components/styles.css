@@ -29,14 +29,14 @@
     right: 0px;
     border: none;
     font-size: 15px;
-    background-color: #2f74c0;
+    background-color:#5585b5;
     color: white;
     transition: 0.2s all;
     box-shadow: 0 0 10px black;
   }
   
   .input_submit:hover {
-    background-color: #388ae2;
+    background-color:#5585b5;
     cursor: pointer;
   }
   
@@ -119,6 +119,10 @@
     .todos {
       width: 45%;
     }
+  }
+  
+  .{
+    background-color: #5585b5 ;
   }
   
   @media (max-width: 700px) {
